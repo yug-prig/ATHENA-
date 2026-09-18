@@ -1,0 +1,615 @@
+/* ==========================================================================
+   ATHENA LIBRARY MANAGEMENT SYSTEM — GEN Z "LOVABLE" THEME
+   Cosmic Obsidian (#0D0D15) • Cyber Violet (#8B5CF6) • Hyper Pink (#EC4899) • Neon Mint (#10B981)
+   ========================================================================== */
+
+/* Root & Global Typography */
+.root {
+    -fx-font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+    -fx-font-size: 14px;
+    -fx-base: #0D0D15;
+    -fx-background-color: #0D0D15;
+    -fx-text-fill: #F8FAFC;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* Base text elements */
+.label {
+    -fx-text-fill: #F8FAFC;
+}
+
+.text-muted {
+    -fx-text-fill: #94A3B8;
+}
+
+.text-gradient {
+    -fx-text-fill: #EC4899;
+}
+
+/* ==========================================================================
+   APP SHELL & SIDEBAR NAVIGATION
+   ========================================================================== */
+
+.app-container {
+    -fx-background-color: #0D0D15;
+}
+
+/* Sidebar with glassmorphism feel */
+.sidebar {
+    -fx-background-color: #121220;
+    -fx-border-color: rgba(139, 92, 246, 0.18);
+    -fx-border-width: 0 1 0 0;
+    -fx-padding: 22 14 22 14;
+}
+
+.brand-container {
+    -fx-padding: 0 0 24 0;
+    -fx-alignment: center-left;
+}
+
+.brand-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #F8FAFC;
+}
+
+.brand-subtitle {
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #A855F7;
+    -fx-padding: 2 0 0 0;
+}
+
+.nav-section-label {
+    -fx-font-size: 11px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #64748B;
+    -fx-padding: 16 10 6 10;
+    -fx-letter-spacing: 1px;
+}
+
+/* Navigation Buttons with bubbly rounded pill aesthetic */
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #94A3B8;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-alignment: center-left;
+    -fx-padding: 12 16 12 16;
+    -fx-background-radius: 14px;
+    -fx-cursor: hand;
+    -fx-graphic-text-gap: 12px;
+}
+
+.nav-button:hover {
+    -fx-background-color: #1D1D32;
+    -fx-text-fill: #F8FAFC;
+}
+
+.nav-button-active {
+    -fx-background-color: linear-gradient(to right, rgba(139, 92, 246, 0.28), rgba(236, 72, 153, 0.12));
+    -fx-text-fill: #C084FC;
+    -fx-font-weight: 800;
+    -fx-border-color: #8B5CF6;
+    -fx-border-width: 0 0 0 4px;
+    -fx-border-radius: 2px;
+}
+
+.sidebar-toggle-btn {
+    -fx-background-color: #1A1A2E;
+    -fx-text-fill: #C084FC;
+    -fx-background-radius: 10px;
+    -fx-padding: 8 12;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-border-color: rgba(139, 92, 246, 0.3);
+    -fx-border-radius: 10px;
+}
+
+.sidebar-toggle-btn:hover {
+    -fx-background-color: #262642;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: #8B5CF6;
+}
+
+/* Top Header Bar */
+.header-bar {
+    -fx-background-color: #121220;
+    -fx-border-color: rgba(139, 92, 246, 0.18);
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 16 28 16 28;
+    -fx-alignment: center-left;
+}
+
+.page-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #F8FAFC;
+}
+
+.page-subtitle {
+    -fx-font-size: 13px;
+    -fx-text-fill: #94A3B8;
+}
+
+.header-badge {
+    -fx-background-color: #1A1A2E;
+    -fx-border-color: rgba(139, 92, 246, 0.3);
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 6 16 6 16;
+    -fx-text-fill: #E2E8F0;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+}
+
+/* ==========================================================================
+   STAT CARDS & METRICS (GEN Z LOVABLE VIBE)
+   ========================================================================== */
+
+.stat-card {
+    -fx-background-color: #161628;
+    -fx-border-color: rgba(139, 92, 246, 0.22);
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 22px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.35), 14, 0, 0, 6);
+    -fx-cursor: hand;
+}
+
+.stat-card:hover {
+    -fx-border-color: rgba(236, 72, 153, 0.6);
+    -fx-background-color: #1C1C34;
+    -fx-effect: dropshadow(gaussian, rgba(139, 92, 246, 0.28), 20, 0, 0, 8);
+}
+
+.stat-card-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #94A3B8;
+    -fx-letter-spacing: 0.5px;
+}
+
+.stat-card-value {
+    -fx-font-size: 34px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #FFFFFF;
+}
+
+.stat-card-badge {
+    -fx-font-size: 11px;
+    -fx-font-weight: 700;
+    -fx-padding: 4 12 4 12;
+    -fx-background-radius: 16px;
+}
+
+.stat-badge-blue {
+    -fx-background-color: rgba(139, 92, 246, 0.22);
+    -fx-text-fill: #C084FC;
+    -fx-border-color: rgba(139, 92, 246, 0.4);
+    -fx-border-radius: 16px;
+}
+
+.stat-badge-green {
+    -fx-background-color: rgba(16, 185, 129, 0.22);
+    -fx-text-fill: #34D399;
+    -fx-border-color: rgba(16, 185, 129, 0.4);
+    -fx-border-radius: 16px;
+}
+
+.stat-badge-amber {
+    -fx-background-color: rgba(245, 158, 11, 0.22);
+    -fx-text-fill: #FBBF24;
+    -fx-border-color: rgba(245, 158, 11, 0.4);
+    -fx-border-radius: 16px;
+}
+
+.stat-badge-red {
+    -fx-background-color: rgba(236, 72, 153, 0.22);
+    -fx-text-fill: #F472B6;
+    -fx-border-color: rgba(236, 72, 153, 0.4);
+    -fx-border-radius: 16px;
+}
+
+.stat-icon-container {
+    -fx-background-radius: 16px;
+    -fx-padding: 12px;
+    -fx-alignment: center;
+}
+
+/* ==========================================================================
+   CONTENT PANELS & CONTAINERS
+   ========================================================================== */
+
+.content-area {
+    -fx-background-color: #0D0D15;
+    -fx-padding: 24px;
+}
+
+.panel-card {
+    -fx-background-color: #161628;
+    -fx-border-color: rgba(139, 92, 246, 0.2);
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 24px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 12, 0, 0, 5);
+}
+
+.panel-header-title {
+    -fx-font-size: 19px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #F8FAFC;
+}
+
+.panel-header-desc {
+    -fx-font-size: 13px;
+    -fx-text-fill: #94A3B8;
+}
+
+/* ==========================================================================
+   BUTTONS (BOUNCY, GRADIENT, LOVABLE)
+   ========================================================================== */
+
+.button {
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+    -fx-background-radius: 12px;
+    -fx-padding: 10 20 10 20;
+    -fx-cursor: hand;
+    -fx-alignment: center;
+}
+
+/* Radiant Violet to Pink Primary CTA */
+.btn-primary {
+    -fx-background-color: linear-gradient(to right, #8B5CF6, #EC4899);
+    -fx-text-fill: #FFFFFF;
+    -fx-effect: dropshadow(gaussian, rgba(236, 72, 153, 0.35), 10, 0, 0, 3);
+}
+
+.btn-primary:hover {
+    -fx-background-color: linear-gradient(to right, #7C3AED, #DB2777);
+    -fx-effect: dropshadow(gaussian, rgba(236, 72, 153, 0.55), 16, 0, 0, 5);
+}
+
+.btn-primary:pressed {
+    -fx-background-color: linear-gradient(to right, #6D28D9, #BE185D);
+}
+
+/* Mint / Aqua CTA */
+.btn-success {
+    -fx-background-color: linear-gradient(to right, #10B981, #06B6D4);
+    -fx-text-fill: #FFFFFF;
+    -fx-effect: dropshadow(gaussian, rgba(16, 185, 129, 0.35), 10, 0, 0, 3);
+}
+
+.btn-success:hover {
+    -fx-background-color: linear-gradient(to right, #059669, #0891B2);
+    -fx-effect: dropshadow(gaussian, rgba(16, 185, 129, 0.55), 16, 0, 0, 5);
+}
+
+/* Neon Coral / Danger */
+.btn-danger {
+    -fx-background-color: linear-gradient(to right, #EF4444, #F43F5E);
+    -fx-text-fill: #FFFFFF;
+    -fx-effect: dropshadow(gaussian, rgba(244, 63, 94, 0.35), 10, 0, 0, 3);
+}
+
+.btn-danger:hover {
+    -fx-background-color: linear-gradient(to right, #DC2626, #E11D48);
+    -fx-effect: dropshadow(gaussian, rgba(244, 63, 94, 0.55), 16, 0, 0, 5);
+}
+
+/* Glassy Dark Secondary */
+.btn-secondary {
+    -fx-background-color: #1F1F36;
+    -fx-text-fill: #E2E8F0;
+    -fx-border-color: rgba(139, 92, 246, 0.3);
+    -fx-border-radius: 12px;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #2D2D4E;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: #8B5CF6;
+}
+
+/* Subtle Outline */
+.btn-outline {
+    -fx-background-color: transparent;
+    -fx-text-fill: #C084FC;
+    -fx-border-color: rgba(139, 92, 246, 0.4);
+    -fx-border-radius: 12px;
+}
+
+.btn-outline:hover {
+    -fx-background-color: rgba(139, 92, 246, 0.15);
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: #8B5CF6;
+}
+
+.btn-sm {
+    -fx-padding: 7 14 7 14;
+    -fx-font-size: 12px;
+    -fx-background-radius: 10px;
+}
+
+/* ==========================================================================
+   INPUTS, FILTERS & PILL SEARCH BARS
+   ========================================================================== */
+
+.text-field, .text-area {
+    -fx-background-color: #10101C;
+    -fx-text-fill: #F8FAFC;
+    -fx-prompt-text-fill: #64748B;
+    -fx-border-color: rgba(139, 92, 246, 0.25);
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 10 16 10 16;
+    -fx-font-size: 13px;
+}
+
+.text-field:focused, .text-area:focused {
+    -fx-border-color: #8B5CF6;
+    -fx-background-color: #121222;
+    -fx-effect: dropshadow(gaussian, rgba(139, 92, 246, 0.45), 10, 0, 0, 0);
+}
+
+.search-field {
+    -fx-background-color: #10101C;
+    -fx-text-fill: #F8FAFC;
+    -fx-prompt-text-fill: #64748B;
+    -fx-border-color: rgba(139, 92, 246, 0.3);
+    -fx-border-radius: 24px;
+    -fx-background-radius: 24px;
+    -fx-padding: 9 20 9 20;
+    -fx-font-size: 13px;
+}
+
+.search-field:focused {
+    -fx-border-color: #EC4899;
+    -fx-effect: dropshadow(gaussian, rgba(236, 72, 153, 0.4), 12, 0, 0, 0);
+}
+
+/* ComboBox */
+.combo-box {
+    -fx-background-color: #10101C;
+    -fx-border-color: rgba(139, 92, 246, 0.25);
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 4 10 4 10;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #F8FAFC;
+    -fx-background-color: transparent;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #161628;
+    -fx-border-color: rgba(139, 92, 246, 0.35);
+    -fx-border-radius: 14px;
+    -fx-background-radius: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 16, 0, 0, 6);
+}
+
+.combo-box-popup .list-cell {
+    -fx-text-fill: #F8FAFC;
+    -fx-padding: 9 16 9 16;
+    -fx-background-color: #161628;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #23233C;
+}
+
+.combo-box-popup .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(to right, #8B5CF6, #EC4899);
+    -fx-text-fill: #FFFFFF;
+}
+
+/* ==========================================================================
+   CUSTOM TABLE VIEW (SMOOTH, ROUNDED, AESTHETIC)
+   ========================================================================== */
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-background-radius: 16px;
+    -fx-border-color: rgba(139, 92, 246, 0.2);
+    -fx-border-radius: 16px;
+    -fx-border-width: 1px;
+    -fx-padding: 0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #11111E;
+    -fx-background-radius: 15px 15px 0 0;
+    -fx-padding: 6 0 6 0;
+    -fx-border-color: rgba(139, 92, 246, 0.15);
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-size: 42px;
+    -fx-border-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #A855F7;
+    -fx-font-weight: 800;
+    -fx-font-size: 12px;
+    -fx-alignment: center-left;
+    -fx-letter-spacing: 0.5px;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #F8FAFC;
+    -fx-alignment: center-left;
+    -fx-padding: 12 16 12 16;
+    -fx-border-color: transparent;
+}
+
+/* Zebra striping */
+.table-row-cell {
+    -fx-background-color: #131322;
+    -fx-border-color: #1A1A2E;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #161628;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #23233E;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: rgba(139, 92, 246, 0.28);
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: #FFFFFF;
+}
+
+.table-view .placeholder .label {
+    -fx-text-fill: #64748B;
+    -fx-font-size: 14px;
+}
+
+/* Custom Scrollbars */
+.scroll-bar:vertical, .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .thumb, .scroll-bar:horizontal .thumb {
+    -fx-background-color: #2B2B48;
+    -fx-background-radius: 12px;
+}
+
+.scroll-bar:vertical .thumb:hover, .scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: #8B5CF6;
+}
+
+.scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+/* ==========================================================================
+   STATUS PILLS (GLOWING BADGES WITH EMOJI DOTS)
+   ========================================================================== */
+
+.status-pill {
+    -fx-padding: 5 12 5 12;
+    -fx-background-radius: 20px;
+    -fx-font-size: 11px;
+    -fx-font-weight: 800;
+    -fx-alignment: center;
+}
+
+.status-pill-available {
+    -fx-background-color: rgba(16, 185, 129, 0.2);
+    -fx-text-fill: #34D399;
+    -fx-border-color: rgba(16, 185, 129, 0.5);
+    -fx-border-radius: 20px;
+}
+
+.status-pill-issued {
+    -fx-background-color: rgba(139, 92, 246, 0.22);
+    -fx-text-fill: #C084FC;
+    -fx-border-color: rgba(139, 92, 246, 0.5);
+    -fx-border-radius: 20px;
+}
+
+.status-pill-overdue {
+    -fx-background-color: rgba(244, 63, 94, 0.22);
+    -fx-text-fill: #FB7185;
+    -fx-border-color: rgba(244, 63, 94, 0.5);
+    -fx-border-radius: 20px;
+}
+
+.status-pill-returned {
+    -fx-background-color: rgba(6, 182, 212, 0.22);
+    -fx-text-fill: #38BDF8;
+    -fx-border-color: rgba(6, 182, 212, 0.5);
+    -fx-border-radius: 20px;
+}
+
+.status-pill-empty {
+    -fx-background-color: rgba(148, 163, 184, 0.15);
+    -fx-text-fill: #94A3B8;
+    -fx-border-color: rgba(148, 163, 184, 0.3);
+    -fx-border-radius: 20px;
+}
+
+/* ==========================================================================
+   FLOATING TOAST NOTIFICATIONS
+   ========================================================================== */
+
+.toast-container {
+    -fx-background-color: #17172A;
+    -fx-background-radius: 16px;
+    -fx-border-radius: 16px;
+    -fx-border-width: 1.5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 20, 0, 0, 8);
+    -fx-cursor: hand;
+}
+
+.toast-success {
+    -fx-border-color: #10B981;
+    -fx-effect: dropshadow(gaussian, rgba(16, 185, 129, 0.35), 20, 0, 0, 6);
+}
+
+.toast-error {
+    -fx-border-color: #EC4899;
+    -fx-effect: dropshadow(gaussian, rgba(236, 72, 153, 0.35), 20, 0, 0, 6);
+}
+
+.toast-info {
+    -fx-border-color: #8B5CF6;
+    -fx-effect: dropshadow(gaussian, rgba(139, 92, 246, 0.35), 20, 0, 0, 6);
+}
+
+/* ==========================================================================
+   MODALS, DIALOGS & FORMS
+   ========================================================================== */
+
+.dialog-pane {
+    -fx-background-color: #161628;
+    -fx-border-color: rgba(139, 92, 246, 0.35);
+    -fx-border-width: 1px;
+    -fx-border-radius: 18px;
+    -fx-background-radius: 18px;
+    -fx-padding: 16px;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #10101E;
+    -fx-padding: 16px;
+    -fx-background-radius: 18px 18px 0 0;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-font-size: 17px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #F8FAFC;
+}
+
+.dialog-pane .content {
+    -fx-padding: 16px 0 16px 0;
+}
+
+.form-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #C084FC;
+    -fx-padding: 0 0 4 0;
+}
